@@ -1,0 +1,51 @@
+{
+  "name": "codebook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "codegen": "openapi-generator-cli generate -g typescript-fetch --enable-post-process-file -c ./codegen.yaml -i http://127.0.0.1:8000/doc/schema/ -o src/generated"
+  },
+  "dependencies": {
+    "@ahooksjs/use-url-state": "^3.5.0",
+    "@ant-design/pro-components": "^2.3.49",
+    "ahooks": "^3.7.4",
+    "ansi_up": "^5.1.0",
+    "antd": "^4.24.1",
+    "bulma": "^0.9.4",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.2",
+    "react-router-dom": "^6.4.2",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "@types/node": "^18.11.7",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@types/react-syntax-highlighter": "^15.5.5",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "@vitejs/plugin-react": "^2.2.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.0",
+    "vite-plugin-pages": "^0.27.1"
+  }
+}
